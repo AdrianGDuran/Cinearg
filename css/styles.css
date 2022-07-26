@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.footer__redes {
+    width: 30px;
+    height: 30px;
+}
+.titulos {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(135, 6, 255);
+    background-color: black;
+    margin: 13px;
+}
+.reseñas_imagenes {
+    display: grid;
+    grid-template-areas: "peakyblinders strangerthings umbrellaacademy"
+                        "lightyear thor topgun"
+}
+.peakyblinders {
+    grid-area: peakyblinders;
+    width: 33%;
+}
+.strangerthings {
+    grid-area: strangerthings;
+    width: 33%;
+}
+.umbrellaacademy {
+    grid-area: umbrellaacademy;
+    width: 33%;
+}
+.lightyear {
+    grid-area: lightyear;
+    width: 33%;
+}
+.thor {
+    grid-area: thor;
+    width: 33%;
+}
+.topgun {
+    grid-area: topgun;
+    width: 33%;
+}
+.recinetes_grid { 
+    display: grid;
+    grid-template-areas: "lightyearr cazafantasmas";
+    grid-template-rows: 1fr 1fr;
+}
+.lightyearr {
+    grid-area: lightyearr;
+    width: 45%;
+}
+.cazafantasmas {
+    grid-area: cazafantasmas;
+    width: 45%;
+}
+.estrenos_imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "thorr topgunn"
+                        "elvis minions";
+}
+.thorr {
+    grid-area: thorr;
+    width: 98%;
+}
+.topgunn {
+    grid-area: topgunn;
+    width: 98%;
+    background-size: cover;
+}
+.elvis {
+    grid-area: elvis;
+    width: 98%;
+    background-size: cover;
+}
+.minions {
+    grid-area: minions;
+    width: 98%;
+}
+.recientes_span {
+    display: flex;
+    color: blue;
+    font-size: 40px;
+    margin: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.background_gris {
+    background-color: gray;
+}
+.reseñas_span {
+    font-size: 25px;
+    padding: 0 180px 0 0;
+}
+ul {
+    list-style: none;
+    padding: 0 16px;
+}
+.header_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header_items {
+    display: inline;
+    padding: 80px;
+}
+.header_logo {
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+nav {
+    background-color: rgb(15, 2, 2);
+}
+.header_items a {
+    color: rgb(177, 94, 255);
+    text-decoration: none;
+}
+.footer_derechos {
+    background-color: gray;
+}
+.novedades_imagenes {
+    width: 420px;
+    height: 150px;
+    margin: 12px;
+}
+.recomendaciones_imagenes { 
+    width: 350px;
+    height: 170px;
+    margin: 48px;
+}
+.nosotros_intro {
+    font-size: 27px;
+    margin: 55px;
+    background-color: rgb(163, 163, 41);
+}
+.comentarios_casillas {
+    margin: 16px;
+    padding: 0px 300px;
+    font-size: 22px;
+}
+.comentarios_botones {
+    margin: 12px;
+    font-size: 20px;
+    padding: 0px 570px;
+}
+@media (min-width 320px) and (max-width 575px) {
+.estrenos_imagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "thorr topgunn"
+                        "elvis minions";
+    }
+.recinetes_grid { 
+    display: grid;
+    grid-template-areas: "lightyearr cazafantasmas";
+    grid-template-rows: 1fr;
+    }
+}
+@media (min-width 576px) and (max-width 992px) {
+    .estrenos_imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "thorr topgunn"
+                            "elvis minions";
+        }
+    .recinetes_grid { 
+        display: grid;
+        grid-template-areas: "lightyearr cazafantasmas";
+        grid-template-rows: 1fr 1fr;
+        }
+}
