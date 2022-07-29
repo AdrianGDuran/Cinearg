@@ -1,0 +1,22 @@
+.header {
+    .&_nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .&_items {
+        display: inline;
+        padding: 80px;
+    }
+    .&_logo {
+        display: inline;
+        width: 50px;
+        height: 50px;
+    }
+    .&_items a {
+        color: rgb(177, 94, 255);
+        text-decoration: none;
+    }
+
+}

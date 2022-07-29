@@ -1,0 +1,24 @@
+{
+  "name": "coder-house",
+  "version": "1.0.0",
+  "description": "<h1>CineArg</h1>\r <p>Este sitio es una pagina web de cine, pensado para el curso de desarrollo web</p>\r <h2>Tecnologias usadas</h2>\r <ul>\r <li>HTML5</li>\r <li>CSS3</li>\r <li>Bootstrap</li>\r <li>SASS</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css","watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianGDuran/Cinearg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianGDuran/Cinearg/issues"
+  },
+  "homepage": "https://github.com/AdrianGDuran/Cinearg#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
