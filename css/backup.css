@@ -177,3 +177,26 @@ nav {
         grid-template-rows: 1fr 1fr;
         }
 }
+.novedades_grid {
+    display: grid;
+    grid-template-areas:"estrenos tomcruise barbie"
+                        "hocuspocus ryan titanic" ;
+}
+.estrenos {
+    grid-area: estrenos;
+}
+.tomcruise {
+    grid-area: tomcruise;
+}
+.barbie {
+    grid-area: barbie;
+}
+.hocuspocus {
+    grid-area: hocuspocus;
+}
+.ryan {
+    grid-area: ryan;
+}
+.titanic {
+    grid-area: titanic;
+}

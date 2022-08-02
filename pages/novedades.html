@@ -22,18 +22,20 @@
         </nav>
     </header>
     <main> <!--Noticias recientes-->
-        <section class="Novedades">Novedades
-            <h1 class="titulos">NOVEDADES</h1>
-            <img class="novedades_imagenes" src="../resources/estrenos julio.jpg" alt="estrenos">
-            <img class="novedades_imagenes" src="../resources/tomcruise.jpg" alt="tomcruise">
-            <img class="novedades_imagenes" src="../resources/barbie.jpg" alt="barbie">
-            <img class="novedades_imagenes" src="../resources/hocus pocus.jpg" alt="hocuspocus">
-            <img class="novedades_imagenes" src="../resources/ryan.jpg" alt="ryan">
-            <img class="novedades_imagenes" src="../resources/titanic.jpg" alt="titanic">
+        <h1 class="novedades_titulo">NOVEDADES</h1>
+        <section class="novedades_grid">
+            <img class="novedades_imagenes estrenos" src="../resources/estrenos julio.jpg" alt="estrenos">
+            <img class="novedades_imagenes tomcruise" src="../resources/tomcruise.jpg" alt="tomcruise">
+            <img class="novedades_imagenes barbie" src="../resources/barbie.jpg" alt="barbie">
+            <img class="novedades_imagenes hocuspocus" src="../resources/hocus pocus.jpg" alt="hocuspocus">
+            <img class="novedades_imagenes ryan" src="../resources/ryan.jpg" alt="ryan">
+            <img class="novedades_imagenes titanic" src="../resources/titanic.jpg" alt="titanic">
+            <img class="novedades_imagenes bp2" src="../resources/bp2.jpg" alt="blackp2">
+            <img class="novedades_imagenes pinocho" src="../resources/pinocho.jpeg" alt="pinocho">
+            <img class="novedades_imagenes marilyn" src="../resources/marilyn.jpeg" alt="marilyn">
         </section>
-    </main>
-    <footer> <!--Derechos de autor y logos de redes-->
-        <nav aria-label="Page navigation example">
+        <section >
+        <nav class="pasa_paginas" aria-label="Page navigation example">
             <ul class="pagination">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -50,12 +52,25 @@
             </li>
             </ul>
         </nav>
+    </section>
+    </main>
+    <footer> <!--Derechos de autor y logos de redes-->
+        <div class="footer_nav"> <h3>Navegacion</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer_iconos">
         <img class="footer__redes" src="../resources/instagram.jpg" alt="logo instagram">
         <img class="footer__redes" src="../resources/spotify.png" alt="logo spotify">
         <img class="footer__redes" src="../resources/twitter.png" alt="logo twitter">
-        <p class="footer_derechos">Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Adrian Duran.</p> 
+        <img class="footer_logo" src="../resources/footerimagen.jpeg" alt="logofooter">
+        </div>
+        <p class="footer_derechos">Todo el contenido de esta pagina posee derechos de autor.©</p> 
     </footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

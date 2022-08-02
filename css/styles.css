@@ -15,7 +15,9 @@
 
 .reseñas_imagenes {
   display: grid;
-  grid-template-areas: "peakyblinders strangerthings umbrellaacademy" "lightyear thor topgun"; }
+  grid-template-areas: "peakyblinders strangerthings umbrellaacademy"
+                        "lightyear thor topgun"; 
+}
 
 .peakyblinders {
   grid-area: peakyblinders;
@@ -58,41 +60,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "thorr topgunn" "elvis minions"; }
-
+  grid-template-areas: "thorr topgunn"
+                      "elvis minions"; 
+}
 .thorr {
   grid-area: thorr;
-  width: 98%; }
-
+  width: 98%; 
+}
 .topgunn {
   grid-area: topgunn;
   width: 98%;
-  background-size: cover; }
-
+  background-size: cover; 
+}
 .elvis {
   grid-area: elvis;
   width: 98%;
-  background-size: cover; }
-
+  background-size: cover; 
+}
 .minions {
   grid-area: minions;
-  width: 98%; }
-
+  width: 98%; 
+}
 .recientes_span {
   display: flex;
   color: blue;
   font-size: 40px;
   margin: 12px;
   justify-content: center;
-  align-items: center; }
-
+  align-items: center; 
+}
 .background_gris {
   background-color: gray; }
-
-.reseñas_span {
-  font-size: 25px;
-  padding: 0 180px 0 0; }
-
 ul {
   list-style: none;
   padding: 0 16px; }
@@ -119,14 +117,39 @@ nav {
   color: #b15eff;
   text-decoration: none; }
 
+footer {
+  background-color: gray; 
+  display: grid;
+  grid-template-areas: "nav derechos redes";
+  padding: 24px;
+}
+.footer_redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin: 30px;
+}
+.footer_logo {
+  grid-area: redes;
+  width: 70px;
+  height: 70px;
+  margin: 20px 20px 0px 0px;
+}
+.footer_nav ul li {
+  font-size: 16px;
+  grid-area: nav;
+}
 .footer_derechos {
-  background-color: gray; }
-
-.novedades_imagenes {
-  width: 420px;
-  height: 150px;
-  margin: 12px; }
-
+  grid-area: derechos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 .recomendaciones_imagenes {
   width: 350px;
   height: 170px;
@@ -145,4 +168,202 @@ nav {
     font-size: 20px; }
 
 .navegacion {
-  flex: center; }
+  flex: center; 
+}
+.novedades_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"estrenos tomcruise barbie"
+                        "hocuspocus ryan titanic" 
+                        "marilyn pinocho bp2";
+}
+.estrenos {
+    grid-area: estrenos;
+    width: 97%;
+    height: 90%;
+}
+.tomcruise {
+    grid-area: tomcruise;
+    width: 97%;
+    height: 90%;
+}
+.barbie {
+    grid-area: barbie;
+    width: 97%;
+    height: 90%;
+}
+.hocuspocus {
+    grid-area: hocuspocus;
+    width: 97%;
+    height: 90%;
+}
+.ryan {
+    grid-area: ryan;
+    width: 97%;
+    height: 90%;
+}
+.titanic {
+    grid-area: titanic;
+    width: 97%;
+    height: 90%;
+}
+.marilyn {
+  grid-area: marilyn;
+  width: 97%;
+  height: 90%;
+}
+.marilyn :hover {
+  transform: scale(1.25, 1.25);
+}
+.pinocho {
+  grid-area: pinocho;
+  width: 97%;
+  height: 90%;
+}
+.bp2 {
+  grid-area: bp2;
+  width: 97%;
+  height: 90%;
+}
+.reseñas_botones {
+  padding: 16px ;
+  margin: 12px ;
+  border: none;
+  font-size: 20px;
+}
+.pasa_paginas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.novedades_titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Permanent Marker', cursive;
+  color: #5d00b4;
+  background-color: #0f0202;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .reseñas_imagenes {
+      height: auto;
+      width: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+}
+  .peakyblinders {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .strangerthings {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .umbrellaacademy {
+    grid-column: 1/2;
+    grid-row: 3/3; 
+  }
+  .lightyear {
+    grid-column: 1/2;
+    grid-row: 1/2; } 
+  .thor {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .topgun {
+    grid-column: 1/2;
+    grid-row: 3/3; }
+.novedades_grid {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.estrenos {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.tomcruise {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.barbie {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.hocuspocus {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.ryan {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.titanic {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.marilyn {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+.pinocho {
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+  .bp2 {
+grid-column: 1/2;
+grid-row: 9/10;
+}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .novedades_grid {
+    height: auto;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.estrenos {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 10px;
+}
+.tomcruise {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 10px;
+}
+.barbie {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 10px;
+}
+.hocuspocus {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 10px;
+}
+.ryan {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin: 10px;
+}
+.titanic {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  margin: 10px;
+}
+.marilyn {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  margin: 10px;
+}
+.pinocho {
+  grid-column: 1/2;
+  grid-row: 8/9;
+  margin: 10px;
+}
+.bp2 {
+grid-column: 1/2;
+grid-row: 9/10;
+margin: 10px;
+}
+}

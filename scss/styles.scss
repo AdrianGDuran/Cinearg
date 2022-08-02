@@ -50,7 +50,6 @@
 .recientes_grid { 
     display: grid;
     grid-template-areas: "lightyearr cazafantasmas";
-    grid-template-rows: 1fr 1fr;
 }
 .lightyearr {
     grid-area: lightyearr;
@@ -103,11 +102,6 @@ ul {
 nav {
     background-color: rgb(15, 2, 2);
 }
-.novedades_imagenes {
-    width: 420px;
-    height: 150px;
-    margin: 12px;
-}
 .recomendaciones_imagenes { 
     width: 350px;
     height: 170px;
@@ -127,4 +121,27 @@ nav {
 }
 .navegacion {
     flex: center;
+}
+.novedades_grid {
+    display: grid;
+    grid-template-areas:"estrenos tomcruise barbie"
+                        "hocuspocus ryan titanic" ;
+}
+.estrenos {
+    grid-area: estrenos;
+}
+.tomcruise {
+    grid-area: tomcruise;
+}
+.barbie {
+    grid-area: barbie;
+}
+.hocuspocus {
+    grid-area: hocuspocus;
+}
+.ryan {
+    grid-area: ryan;
+}
+.titanic {
+    grid-area: titanic;
 }
