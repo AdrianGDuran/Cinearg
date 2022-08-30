@@ -1,26 +1,22 @@
 @charset "UTF-8";
 * 
 .navbarc {
-  color: #0f0202;
+  color: #ffffff;
 }
 .nav-link {
   color: rgb(255, 255, 255);
 }
-.navbar-toggler {
-  color: rgb(255, 255, 255);
-}
-.navbar-toggler-icon {
-  color: rgb(255, 255, 255);
-}
 .navbar {
-color: rgb(255, 255, 255);
+  color: #000000;
 }
 .button {
   color: rgb(255, 255, 255);
 }
 .search {
   height: 30px;
-  width: 30;
+}
+.header_nav{
+  background-color: #000000; 
 }
 h2 {
   display: flex;
@@ -28,9 +24,11 @@ h2 {
   background-color: #000000;
   color: #8400ff;
 }
+img:hover{
+  transform: scale(1.05, 1.05); 
+}
 .botonbus {
   height: 30px;
-  width: 30;
 }
 .inicio_galeria {
   margin: 9px;
@@ -259,18 +257,10 @@ h2 {
   background-color: #000000;
   color: #f3f042;
 }
-.recientes_span {
-  display: flex;
-  color: blue;
-  font-size: 40px;
-  margin: 12px;
-  justify-content: center;
-  align-items: center; 
-}
 ul {
   list-style: none;
-  padding: 0 16px; }
-
+  padding: 0 16px; 
+}
 .header_nav {
   display: flex;
   flex-wrap: wrap;
@@ -279,20 +269,20 @@ ul {
 }
 .header_items {
   display: inline;
-  padding: 80px; }
-
+  padding: 80px; 
+}
 .header_logo {
   display: inline;
   width: 50px;
-  height: 50px; }
-
+  height: 50px; 
+}
 nav {
-  background-color: #0f0202; }
-
+  background-color: #0f0202; 
+}
 .header_items a {
   color: #b15eff;
-  text-decoration: none; }
-
+  text-decoration: none; 
+}
 footer {
   background-color: rgb(0, 0, 0);
   display: grid;
@@ -321,7 +311,6 @@ footer {
   justify-content: end;
   align-items: center; 
 }
-
 .footer_logo {
   width: 70px;
   height: 70px;
@@ -349,18 +338,16 @@ a {
   margin: 55px;
   color: #f3f042; 
 }
-
 .comentarios_casillas {
   margin: 16px;
   padding: 0px 300px;
   font-size: 22px; }
-
 .comentarios_casillas.comentarios {
-  font-size: 20px; }
-
+  font-size: 20px; 
+}
 .navegacion {
-  flex: center; }
-
+  flex: center; 
+}
 .novedades_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -372,83 +359,175 @@ a {
 .bc_novedades {
   background-color: #000000;
 }
-
 .estrenos {
   grid-area: estrenos;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .tomcruise {
   grid-area: tomcruise;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .barbie {
   grid-area: barbie;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .hocuspocus {
   grid-area: hocuspocus;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .ryan {
   grid-area: ryan;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .titanic {
   grid-area: titanic;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .marilyn {
   grid-area: marilyn;
   width: 97%;
-  height: 90%; }
-.novedades_imagenes :hover {
-  transform: scale(1.25, 1.25); 
+  height: 90%; 
 }
-.marilyn :hover {
-  transform: scale(1.25, 1.25); 
-}
-
 .pinocho {
   grid-area: pinocho;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .bp2 {
   grid-area: bp2;
   width: 97%;
-  height: 90%; }
-
+  height: 90%; 
+}
 .reseñas_botones {
   padding: 16px;
   margin: 12px;
   border: none;
-  font-size: 20px; }
-
+  font-size: 20px; 
+}
 .pasa_paginas {
   display: flex;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center; 
+}
 .novedades_titulo {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Permanent Marker', cursive;
   color: #5d00b4;
-  background-color: #0f0202; }
-
+  background-color: #0f0202; 
+}
 @media (min-width: 576px) and (max-width: 992px) {
+  .search {
+    height: 50px;
+    width: 250px;
+  }
+  .inicio_galeria {
+    margin: 9px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .anillosdelpoder {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .creadorbb {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .trailerck {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .carrusel_imagenes {
+    height: auto;
+    width: auto;
+    margin: 10px;
+  }
+  .recientes_grid {
+    margin: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
+  .lightyearr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .cazafantasmass {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .cinemap {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .merlinatb {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .recientes_grid {
+    margin: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
+  .lightyearr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .cazafantasmass {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .cinemap {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .merlinatb {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .estrenos_imagenes {
+    margin: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
+  .thorr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .topgunn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .elvis {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .minions {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .bestia {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .dbsh {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  
   .reseñas_imagenes {
     height: auto;
     width: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
+    grid-template-rows: 1fr; 
+  }
   .peakyblinders {
     grid-column: 1/2;
     grid-row: 1/2; }
@@ -498,9 +577,98 @@ a {
     grid-row: 8/9; }
   .bp2 {
     grid-column: 1/2;
-    grid-row: 9/10; } }
+    grid-row: 9/10; } 
+  
+  
+  .footer_redes {
+    height: 20px;
+    width: 20px;
+  }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .search {
+    height: 30px;
+    width: 200px;
+  }
+  .inicio_galeria {
+    margin: 9px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .anillosdelpoder {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .creadorbb {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .trailerck {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .carrusel_imagenes {
+    height: auto;
+    width: auto;
+    margin: 10px;
+  }
+  .recientes_grid {
+    margin: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
+  .lightyearr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .cazafantasmass {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .cinemap {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .merlinatb {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .estrenos_imagenes {
+    margin: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
+  .thorr {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .topgunn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .elvis {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .minions {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .bestia {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .dbsh {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+
+
+
+
+
+
   .novedades_grid {
     height: auto;
     width: auto;
@@ -541,4 +709,18 @@ a {
   .bp2 {
     grid-column: 1/2;
     grid-row: 9/10;
-    margin: 10px; } }
+    margin: 10px; } 
+  .footer_redes {
+    height: 20px;
+    width: 20px;
+  } 
+  .footer_logo {
+    width: 30px;
+    height: 30px;
+  }
+  .twitter {
+    height: 20px;
+    width: 20px;
+  }
+
+}
