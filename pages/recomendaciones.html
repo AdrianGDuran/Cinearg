@@ -11,27 +11,60 @@
     <title>Document</title>
 </head>
 <body>
-    <header> <!-- Encabezado: barra de navegacion e icono -->
-        <nav><ul>
-            <li class="header_items"><a href="../index.html">inicio</a></li>
-            <li class="header_items"><a href="novedades.html">novedades</a></li>
-            <li class="header_items"><a href="resenas.html">reseñas</a></li>
-            <li class="header_items"><a href="recomendaciones.html">recomendaciones</a></li>
-            <li class="header_items"><a href="nosotros.html">nosotros</a></li>
-        </ul>
+    <header class="header_nav"> <!-- Encabezado: barra de navegacion e icono -->
+        <nav class="navbar navbar-expand-lg navbarc">
+            <div class="container-fluid">
+            <a class="icono"><img src="../resources/icono.png" alt="icono"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resenas.html">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="botonbus" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </header>
     <main> <!--Peliculas y series recomendadas-->
         <h1 class="titulos">Recomendaciones</h1>
-        <img class="recomendaciones_imagenes"  src="../resources/disney+.jpg" alt="disney+">
-        <img class="recomendaciones_imagenes"  src="../resources/prime.webp" alt="prime">
-        <img class="recomendaciones_imagenes"  src="../resources/peliculasnetflix.jpg" alt="netflix">
-        <img class="recomendaciones_imagenes"  src="../resources/peliculasnuevas.jpg" alt="estrenos">
-        <img class="recomendaciones_imagenes"  src="../resources/5peliculas.jpg" alt="5peliculas">
-        <img class="recomendaciones_imagenes" src="../resources/disney+2.webp" alt="disney+">
+        <section class="recomendaciones_imagenes">
+        <img class="recomendaciones_imagenes disney"  src="../resources/disney+.jpg" alt="disney">
+        <img class="recomendaciones_imagenes prime"  src="../resources/prime.webp" alt="prime">
+        <img class="recomendaciones_imagenes netflix"  src="../resources/peliculasnetflix.jpg" alt="netflix">
+        <img class="recomendaciones_imagenes estrenos"  src="../resources/peliculasnuevas.jpg" alt="estrenos">
+        <img class="recomendaciones_imagenes peliculas"  src="../resources/5peliculas.jpg" alt="5peliculas">
+        <img class="recomendaciones_imagenes disneydos" src="../resources/disney+2.webp" alt="disney+">
+        <img class="recomendaciones_imagenes beats" src="../resources/beats.jfif" alt="beats">
+        <img class="recomendaciones_imagenes elcamino" src="../resources/elcamino.jpg" alt="elcamino">
+        <img class="recomendaciones_imagenes yourhonor" src="../resources/yourhonor.jfif" alt="yourhonor">
+    </section>
     </main>
-    <footer> <!--Derechos de autor y logos de redes-->
-        <nav aria-label="navegacion">
+    <section >
+        <nav class="pasa_paginas" aria-label="Page navigation example">
             <ul class="pagination">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -48,12 +81,27 @@
             </li>
             </ul>
         </nav>
-        <img class="footer__redes" src="../resources/instagram.jpg" alt="logo instagram">
-        <img class="footer__redes" src="../resources/spotify.png" alt="logo spotify">
-        <img class="footer__redes" src="../resources/twitter.png" alt="logo twitter">
-        <p class="footer_derechos"> Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Adrian Duran.</p> 
+    </section>
+    </main>
+    <footer> <!--Derechos de autor y logos de redes-->
+        <div class="footer_nav"> <h3 class="footernav_titulo">Navegacion</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer_redes">
+        <img class="footer__redes instagram" src="../resources/instagram.jpg" alt="logo instagram">
+        <img class="footer__redes spotify" src="../resources/spotify.jpg" alt="logo spotify">
+        <img class="footer__redes twitter" src="../resources/twitter.jpg" alt="logo twitter">
+        <img class="footer_logo" src="../resources/footerimagen.jpeg" alt="logofooter">
+        </div>
+        <p class="footer_derechos">Todo el contenido de esta pagina posee derechos de autor.©</p> 
     </footer>
-<!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

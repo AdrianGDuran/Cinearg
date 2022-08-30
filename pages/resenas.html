@@ -12,14 +12,42 @@
 
 </head>
 <body>
-    <header> <!-- Encabezado: barra de navegacion e icono -->
-        <nav><ul>
-            <li class="header_items"><a href="../index.html">inicio</a></li>
-            <li class="header_items"><a href="novedades.html">novedades</a></li>
-            <li class="header_items"><a href="resenas.html">reseñas</a></li>
-            <li class="header_items"><a href="recomendaciones.html">recomendaciones</a></li>
-            <li class="header_items"><a href="nosotros.html">nosotros</a></li>
-        </ul>
+    <header class="header_nav"> <!-- Encabezado: barra de navegacion e icono -->
+        <nav class="navbar navbar-expand-lg navbarc">
+            <div class="container-fluid">
+            <a class="icono"><img src="../resources/icono.png" alt="icono"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resenas.html">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="botonbus" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -29,11 +57,16 @@
             <img class="peakyblinders" src="../resources/Peaky-Blinders-The-Kings-Ransom-maxresdefault.jpg" alt="peakyblinders">
             <img class="strangerthings" src="../resources/stranger-things-temporada-4-ya-viene-1080x609 (1).webp" alt="strangerthings">
             <img class="umbrellaacademy" src="../resources/AAAABVIOUQ6-fV-xWxUpK2yLKt5meBnhS6TTAt1ExLWieT58ph9hNHGmyc5F9nRNm476yEsME8CmSHO41T-J1w4E3Qr-Dxs2TAllAPn6YnJ1sGLcHU7E5a08ucyOsgbgTA.jpg" alt="umbrellaacademy">
-            <button class="reseñas_botones">Reseña Peaky Blinders sin spoiler</button> <button class="reseñas_botones">Reseña StrangerThings sin spoiler</button> <button class="reseñas_botones">Reseña UmbrellaAcademy sin spoiler</button>
+            <img class="sandman" src="../resources/sandman.jfif" alt="Sandman">
+            <img class="residente" src="../resources/resident.jpg" alt="Resident Evil Serie">
+            <img class="bcs" src="../resources/bcs.jfif" alt="Better Call Saul">
             <h2>Peliculas</h2>
             <img class="lightyear" src="../resources/1655216168_809622_1655216665_noticia_normal.jpg" alt="lightyear">
             <img class="thor" src="../resources/Thor-Love-and-Thunder-1024x576.jpg" alt="thor">
             <img class="topgun" src="../resources/topgun.jpg" alt="topgun">
+            <img class="turnodedia" src="../resources/turnodeldia.jpeg" alt="Turno de Dia">
+            <img class="supermascotas" src="../resources/supermascotas.jfif" alt="DC Liga de Supermascotas">
+            <img class="trenbala" src="../resources/trenbala.jpg" alt="Tren Bala">
             </div>
             </section>
         <section class="con_spoiler"> 
@@ -42,10 +75,16 @@
             <img class="peakyblinders" src="../resources/Peaky-Blinders-The-Kings-Ransom-maxresdefault.jpg" alt="peakyblinders">
             <img class="strangerthings" src="../resources/stranger-things-temporada-4-ya-viene-1080x609 (1).webp" alt="strangerthings">
             <img class="umbrellaacademy" src="../resources/AAAABVIOUQ6-fV-xWxUpK2yLKt5meBnhS6TTAt1ExLWieT58ph9hNHGmyc5F9nRNm476yEsME8CmSHO41T-J1w4E3Qr-Dxs2TAllAPn6YnJ1sGLcHU7E5a08ucyOsgbgTA.jpg" alt="umbrellaacademy">
+            <img class="sandman" src="../resources/sandman.jfif" alt="Sandman">
+            <img class="residente" src="../resources/resident.jpg" alt="Resident Evil Serie">
+            <img class="bcs" src="../resources/bcs.jfif" alt="Better Call Saul">
             <h2>Peliculas</h2>
             <img class="lightyear" src="../resources/1655216168_809622_1655216665_noticia_normal.jpg" alt="lightyear">
             <img class="thor" src="../resources/Thor-Love-and-Thunder-1024x576.jpg" alt="thor">
             <img class="topgun" src="../resources/topgun.jpg" alt="topgun">
+            <img class="turnodedia" src="../resources/turnodeldia.jpeg" alt="Turno de Dia">
+            <img class="supermascotas" src="../resources/supermascotas.jfif" alt="DC Liga de Supermascotas">
+            <img class="trenbala" src="../resources/trenbala.jpg" alt="Tren Bala">
         </section>
         <nav class="pasa_paginas" aria-label="Page navigation example">
             <ul class="pagination">
@@ -66,7 +105,7 @@
         </nav>
     </main>
     <footer> <!--Derechos de autor y logos de redes-->
-        <div class="footer_nav"> <h3>Navegacion</h3>
+        <div class="footer_nav"> <h3 class="footernav_titulo">Navegacion</h3>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="novedades.html">Novedades</a></li>
@@ -75,13 +114,15 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
         </div>
-        <div class="footer_iconos">
-        <img class="footer__redes" src="../resources/instagram.jpg" alt="logo instagram">
-        <img class="footer__redes" src="../resources/spotify.png" alt="logo spotify">
-        <img class="footer__redes" src="../resources/twitter.png" alt="logo twitter">
+        <div class="footer_redes">
+        <img class="footer__redes instagram" src="../resources/instagram.jpg" alt="logo instagram">
+        <img class="footer__redes spotify" src="../resources/spotify.jpg" alt="logo spotify">
+        <img class="footer__redes twitter" src="../resources/twitter.jpg" alt="logo twitter">
         <img class="footer_logo" src="../resources/footerimagen.jpeg" alt="logofooter">
         </div>
         <p class="footer_derechos">Todo el contenido de esta pagina posee derechos de autor.©</p> 
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

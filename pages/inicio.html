@@ -14,41 +14,98 @@
     <title>Cinearg</title>
 </head>
 <body>
-    <header> <!-- Encabezado: barra de navegacion e icono -->
-        <nav>
-            <img class="header_icono" src="../resources/favicon-16x16.png" alt="icon">
-            <ul>
-                <li class="header_items"><a href="../pages/inicio.html">inicio</a></li>
-                <li class="header_items"><a href="../pages/novedades.html">novedades</a></li>
-                <li class="header_items"><a href="../pages/resenas.html">reseñas</a></li>
-                <li class="header_items"><a href="../pages/recomendaciones.html">recomendaciones</a></li>
-                <li class="header_items"><a href="../pages/nosotros.html">nosotros</a></li>
-            </ul>
-            
-        </nav> 
+    <header class="header_nav"> <!-- Encabezado: barra de navegacion e icono -->
+        <nav class="navbar navbar-expand-lg navbarc">
+            <div class="container-fluid">
+            <a class="icono"><img src="../resources/icono.png" alt="icono"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resenas.html">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="botonbus" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
     </header>
-    <main>      <!--Noticias recientes-->
+    <main>   <!-- Noticias recientes --> 
+        <section class="inicio_galeria">
+          <img class="inicio_galeria anillosdelpoder" src="../resources/anillosdelpoder.jpg" alt="anillosdelpoder">
+          <img class="inicio_galeria creadorbb" src="../resources/creadorbb.jpg" alt="creadorbb">
+          <img class="inicio_galeria trailerck" src="../resources/trailerck.jpg" alt="trailerck">
+        </section> 
+        <h1 class="titulos">Destacados</h1>
+        <section class="destacados_carrusel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../resources/residentevil.jpg" class="carrusel_imagenes d-block w-100" alt="Resident Evil Cancelada">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/topgunrecord.webp" class="carrusel_imagenes d-block w-100" alt="Top Gun Record">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/depredador.jpg" class="carrusel_imagenes d-block w-100" alt="Depredador">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <H1 class="titulos">Recientes</H1>
         <section class="recientes_grid">
-            <H1 class="inicio">INICIO</H1>
-            <H1 class="titulos">Recientes</H1>
-            <img class="lightyearr" src="../resources/lightyear noticia.jpeg" alt="lightyearnoticia">
-            <img class="cazafantasmas" src="../resources/cazafantasmas.jpg" alt="cazafantasmasnoticia">
-            <span class="recientes_span">Lightyear:Se elimina...</span>    
-            <span class="recientes_span">La secuela de 'Cazafantasmas: Más allá'</span>
-        </section>
-        <section class="estrenos"> <!--Ultimos estrenos-->
-            <h1 class="titulos">Estrenos</h1>
-            <img class="thorr" src="../resources/Thor-Love-and-Thunder-1024x576.jpg" alt="thor">
-            <img class="topgunn" src="../resources/topgun.jpg" alt="topgun">
-            <img class="elvis" src="../resources/elvis.jpg" alt="elvis">
-            <img class="minions" src="../resources/minions.webp" alt="minions">
-        </section>
-        <section class="masvistos"> <!--Mas leidos-->
-            <h1 class="titulos">Mas Vistos</h1>
-        </section>                       
-    </main> 
-    <footer> <!--Derechos de autor y logos de redes-->
-        <nav aria-label="Page navigation example">
+              <img class="recientes_grid lightyearr" src="../resources/lightyear noticia.jpeg" alt="lightyearr">
+              <img class="recientes_grid cazafantasmass" src="../resources/cazafantasmas.jpg" alt="cazafantasmass"> 
+              <img class="recientes_grid cinemap" src="../resources/cinemap.jpg" alt="cinema">
+              <img class="recientes_grid merlinatb" src="../resources/merlina tb.jpg" alt="timburton">
+          </section>
+          <h1 class="titulos">Estrenos</h1>
+          <section class="estrenos_imagenes bc_novedades"> <!--Ultimos estrenos-->
+              <img class="estrenos_imagenes thorr" src="../resources/Thor-Love-and-Thunder-1024x576.jpg" alt="thor">
+              <img class="estrenos_imagenes topgunn" src="../resources/topgun.jpg" alt="topgun">
+              <img class="estrenos_imagenes elvis" src="../resources/elvis.jpg" alt="elvis">
+              <img class="estrenos_imagenes minions" src="../resources/minions.jpeg" alt="minions">
+              <img class="estrenos_imagenes bestia" src="../resources/bestia.webp" alt="bestia">
+              <img class="estrenos_imagenes dbsh" src="../resources/dbsh.jpg" alt="dragonb">
+          </section>                     
+      </main>
+      <section >
+        <nav class="pasa_paginas" aria-label="Page navigation example">
             <ul class="pagination">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
@@ -65,12 +122,27 @@
             </li>
             </ul>
         </nav>
-    <img class="footer__redes" src="../resources/instagram.jpg" alt="logo instagram">
-    <img class="footer__redes" src="../resources/spotify.png" alt="logo spotify">
-    <img class="footer__redes" src="../resources/twitter.png" alt="logo twitter">
-    <p class="footer_derechos"> Todos los contenidos de este Sitio (Incluyendo, pero no limitado a, texto, logotipos, contenido, fotografías, audio, botones, nombres comerciales y vídeo) están sujetos a derechos de propiedad por las leyes de Derechos de Autor y demás Leyes relativas Internacionales a Adrian Duran.</p>
+    </section>
+    </main>
+    <footer> <!--Derechos de autor y logos de redes-->
+        <div class="footer_nav"> <h3 class="footernav_titulo">Navegacion</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer_redes">
+        <img class="footer__redes instagram" src="../resources/instagram.jpg" alt="logo instagram">
+        <img class="footer__redes spotify" src="../resources/spotify.jpg" alt="logo spotify">
+        <img class="footer__redes twitter" src="../resources/twitter.jpg" alt="logo twitter">
+        <img class="footer_logo" src="../resources/footerimagen.jpeg" alt="logofooter">
+        </div>
+        <p class="footer_derechos">Todo el contenido de esta pagina posee derechos de autor.©</p> 
     </footer>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
